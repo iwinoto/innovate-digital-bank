@@ -1,1 +1,1 @@
-{"build-release-ready":true,"build-debug-ready":false,"deploy-image":"","chart-path":"","ibm-cluster":""}
+{"build-release-ready":true,"build-debug-ready":false,"devops":false,"deploy-image":"","chart-path":"","ibm-cluster":"iw-iks-demo","motd-access":"Thu, 29 Nov 2018 15:48:01 AEDT","app-id":"","deploy-target":"container"}

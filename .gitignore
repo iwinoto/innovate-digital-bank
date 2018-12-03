@@ -58,6 +58,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# service keys
+*-key.json
+
 # other
 .DS_Store
 license_accepted

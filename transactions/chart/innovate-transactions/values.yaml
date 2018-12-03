@@ -3,7 +3,7 @@
 replicaCount: 1
 revisionHistoryLimit: 3
 image:
-  repository: mycluster.icp:8500/default/innovate-userbase
+  repository: iwinoto/innovate_transactions
   tag: v1.0.0
   pullPolicy: Always
   resources:
