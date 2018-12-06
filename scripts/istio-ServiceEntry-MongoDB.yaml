@@ -1,0 +1,21 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: ServiceEntry
+metadata:
+  name: mongodb
+spec:
+  hosts:
+  - portal-ssl558-5.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+  - portal-ssl500-0.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+  ports:
+  - number: 20720
+    name: mongodb
+    protocol: MONGO
+  resolution: DNS
+  location: MESH_EXTERNAL
+  endpoints:
+  - address: portal-ssl558-5.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+    ports:
+      mongodb: 20720
+  - address: portal-ssl500-0.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+    ports:
+      mongodb: 20720
