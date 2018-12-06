@@ -70,8 +70,8 @@ echoVars() {
     echo IMAGE_TAG [$IMAGE_TAG]
 }
 
-
 buildImages() {
+    echoVars
     if [ "$REGISTRY_SERVICE" = "Docker" ]; then
         docker login -u $DOCKER_USER -p $DOCKER_PASSWD
     else
@@ -116,6 +116,7 @@ deployIstioConfig() {
 }
 
 dbCreate(){
+    echoVars
      # Create Mongo DB service instance
     ibmcloud cf cs $MONGO_SERVICE_NAME $MONGO_SERVICE_PLAN $MONGO_SERVICE_INSTANCE
 
