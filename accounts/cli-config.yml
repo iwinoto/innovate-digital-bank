@@ -56,6 +56,6 @@ stop-cmd : "npm stop"
 chart-path: "chart/innovate-accounts"
 deploy-target: "container"
 # If storing image on IBM CR service
-deploy-image-target: "iwinoto/innovate_accounts"
+deploy-image-target: "iwinoto/innovate-accounts"
 # If storing image on Docker hub
-#deploy-image-target: "iwinoto/innovate_accounts"
+#deploy-image-target: "iwinoto/innovate-accounts"

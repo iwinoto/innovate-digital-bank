@@ -3,7 +3,7 @@
 replicaCount: 1
 revisionHistoryLimit: 3
 image:
-  repository: iwinoto/innovate_accounts
+  repository: iwinoto/innovate-accounts
   tag: v1.0.0
   pullPolicy: Always
   resources:

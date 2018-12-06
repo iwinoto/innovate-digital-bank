@@ -1,7 +1,5 @@
-FROM ibmcom/ibmnode:latest
-LABEL maintainer="amalamine@ae.ibm.com"
-
-#RUN apt-get install -y nodejs npm
+FROM node:8.14.0
+LABEL maintainer="iwinoto@au1.ibm.com"
 
 WORKDIR /app
 # Install app dependencies

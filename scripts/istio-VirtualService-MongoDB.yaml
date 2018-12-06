@@ -1,0 +1,29 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: mongodb
+spec:
+  hosts:
+  - portal-ssl558-5.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+  - portal-ssl500-0.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+  tls:
+  - match:
+    - port: 20720
+      sni_hosts:
+      - portal-ssl558-5.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+    route:
+    - destination:
+        host: portal-ssl558-5.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+        port:
+          number: 20720
+      weight: 100
+  - match:
+    - port: 20720
+      sni_hosts:
+      - portal-ssl500-0.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+    route:
+    - destination:
+        host: portal-ssl500-0.bmix-syd-yp-b91dcaaf-ba63-48a4-b527-cc03596235fa.3974742584.composedb.com
+        port:
+          number: 20720
+      weight: 100

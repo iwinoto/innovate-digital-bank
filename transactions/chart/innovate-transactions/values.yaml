@@ -3,7 +3,7 @@
 replicaCount: 1
 revisionHistoryLimit: 3
 image:
-  repository: iwinoto/innovate_transactions
+  repository: iwinoto/innovate-transactions
   tag: v1.0.0
   pullPolicy: Always
   resources:
@@ -16,7 +16,7 @@ livenessProbe:
 service:
   name: Node
   type: NodePort
-  servicePort: 4200
+  servicePort: 3600
   serviceNodePort: 30200
 hpa:
   enabled: false

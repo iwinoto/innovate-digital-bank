@@ -3,7 +3,7 @@
 replicaCount: 1
 revisionHistoryLimit: 3
 image:
-  repository: iwinoto/innovate_authentication
+  repository: iwinoto/innovate-authentication
   tag: v1.0.0
   pullPolicy: Always
   resources:

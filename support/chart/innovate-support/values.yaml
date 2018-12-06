@@ -3,7 +3,7 @@
 replicaCount: 1
 revisionHistoryLimit: 3
 image:
-  repository: iwinoto/innovate_support
+  repository: iwinoto/innovate-support
   tag: v1.0.0
   pullPolicy: Always
   resources:
